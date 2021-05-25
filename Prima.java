@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package prima;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Inue
+ */
+public class Prima {
+
+    /**
+     * @param args the command line arguments
+     */
+    private static int ambilNilaiRekursif(int number, int index) {
+        if (index == 1) {
+            return 1;
+        } else if (number % index == 0) {
+            return 1 + ambilNilaiRekursif(number, --index);
+        } else {
+            return 0 + ambilNilaiRekursif(number, --index);
+        }
+    }
+
+    public static boolean cekBilanganPrima(int num) {
+        if (num > 1) {
+            return (ambilNilaiRekursif(num, num) == 2);
+        } else {
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan bilangan nya : ");
+        int num = input.nextInt();
+
+        if (cekBilanganPrima(num)) {
+            System.out.println("Bilangan Prima");
+        } else {
+            System.out.println("Bukan Bilangan Prima");
+        }
+    }
+
+}
