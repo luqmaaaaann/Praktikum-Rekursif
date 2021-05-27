@@ -1,0 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package towe;
+import java.util.Scanner;
+/**
+ *
+ * @author Inue
+ */
+public class Towe {
+public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Masukkan jumlah Cakram : ");
+        int n=sc.nextInt();
+        String a="A";
+        String b="B";
+        String c="C";
+        hanoi han=new hanoi(a,b,c,n);
+    }
+}
