@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package towe;
+
+/**
+ *
+ * @author Inue
+ */
+public class hanoi {
+     hanoi(String a,String b,String c,int n) {
+        if(n==1) {
+            System.out.println("Pindahkan disc "+n+" dari pasak "+a+" ke pasak "+c);
+        }
+        else {
+            hanoi han=new hanoi(a,c,b,n-1);
+            System.out.println("Pindahkan disc "+n+" dari pasak "+a+" ke pasak "+c);
+            hanoi h=new hanoi(b,a,c,n-1);
+        }
+    }
+}
