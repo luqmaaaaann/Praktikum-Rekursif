@@ -16,7 +16,7 @@ public class PascalSoal6 {
     /**
      * @param args the command line arguments
      */
-    static long faktorial(int n) {
+ static long faktorial(int n) {
         long z = 1;
         int i = 1;
         while (i <= n) {
@@ -32,13 +32,15 @@ public class PascalSoal6 {
         System.out.print("Masukkan nilai: ");
         a = scan.nextInt();
         for (i = 0; i < a; i++) {
+            System.out.print("F" + (i + 1));
             for (j = 0; j < a - i - 1; j++) {
                 System.out.print(" ");
             }
             for (j = 0; j <= i; j++) {
                 System.out.print(faktorial(i) / (faktorial(j) * faktorial(i - j)) + " ");
             }
-            System.out.println();
+            System.out.println(" ");
         }
+                
     }
 }
