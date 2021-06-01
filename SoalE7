@@ -1,3 +1,5 @@
+untuk mencari kebenaran data di dalam array. Menentukan nilainya di array apakah ada apa engga, jika data di array ada maka true jika tidak maka false. 
+
 boolean search(int[] x, int size, int n) {
       if (size > 0) {
             if (x[size-1] == n) {
