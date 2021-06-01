@@ -1,3 +1,5 @@
+Jika nilai nya sama mk akan ngereturn false kecuali 1,1
+
 public static boolean gcdlike(int p, int q) {
         if (q == 0) return (p == 1);
         return gcdlike(q, p % q);
