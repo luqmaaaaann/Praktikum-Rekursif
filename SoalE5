@@ -1,3 +1,5 @@
+Fungsinya untuk menentukan mengeluarkan sisa bagi dari tergantung numnya.
+
 public static void decToBin (int num) {
       if (num > 0)
       { decToBin (num / 2);
