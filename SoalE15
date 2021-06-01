@@ -1,3 +1,7 @@
+ 
+ Untuk mengetahui volume sebuah kubus dengan menggunakan bahasa C.
+ 
+ 
  cube(5), cube(123)?
     public static int square(int n) {
         if (n == 0) return 0;
