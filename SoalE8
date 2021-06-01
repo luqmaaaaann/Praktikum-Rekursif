@@ -1,3 +1,6 @@
+ //Untuk codingan ini Data HARUS URUT BARU BISA DIJALANKAN, sistem codingan ini menanyakan data yang dicari sama nilai tengah. bila lebih besar data akan mencari dari tengah ke kanan.
+ 
+ 
  boolean binarySearch(int[] x, int start, int end, int n) {
         if (end < start) return false;
         int mid = (start+end) / 2;
