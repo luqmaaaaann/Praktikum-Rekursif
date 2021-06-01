@@ -1,3 +1,7 @@
+Ini merupakan codingan C
+Yang berfungsi buat ngeoutput a-b misal a 1 b 7 mk akan ngeoutput 1-7
+
+
 public static int mystery(int a, int b) {
         if (a == b) StdOut.println(a);
         else {
