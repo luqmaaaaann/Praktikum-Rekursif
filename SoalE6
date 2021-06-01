@@ -1,4 +1,6 @@
-test("01101", 4)!
+Untuk mengecek index ke 4
+
+test("01101", 4)! // untuk index buat akses
   int test (String s, int last) {
       if (last < 0) {
             return 0;
